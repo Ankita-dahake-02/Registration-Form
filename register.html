@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 400px;
+            font-size: 25px;
+            margin-left: 40%;
+            font-size: 25px;
+
+        }
+
+        .container1 {
+            height: 400px;
+            border: 1px solid;
+        }
+
+        .container2 {
+            height: 300px;
+            border: 1px solid blue;
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1 container">
+        <table cellpadding="10">
+            <center>
+                <h3>Registration Form</h3>
+            </center>
+            <tr>
+                <td><label for="name">Name</label></td>
+                <td><input type="text" name="name" id="name"></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email</label></td>
+                <td><input type="email" name="email" id="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="city">city</label></td>
+                <td><input type="text" name="city" id="city"></td>
+            </tr>
+
+            <tr>
+                <td><label for="phone">contact no</label></td>
+                <td><input type="tel" name="phone" id="phone" maxlength="10" /></td>
+            </tr>
+
+            <tr>
+                <td><label for="gender">gender</label></td>
+                <td><input type="radio" name="gender" value="male" id="male">Male
+                    <input type="radio" name="gender" value="female" id="female">Female
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><button type="submit" id="btn">Submit</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="container2 container">
+        <p id="userinfo">
+        </p>
+    </div>
+    <script src="form.js"></script>
+</body>
+
+</html>
